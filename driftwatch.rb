@@ -11,7 +11,7 @@ class Driftwatch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Richonn/DriftWatch/releases/download/v0.7.0/driftwatch_darwin_amd64.tar.gz"
-      sha256 "8f186afefee6eb148080a7e63153a1944d5933e2062b89f873c4df8f96b7e059"
+      sha256 "913cc205fb4c1793b1cdf6956182a69c8ac39a8710bc7bae9de567aa4cc6f435"
 
       define_method(:install) do
         bin.install "driftwatch"
@@ -19,7 +19,7 @@ class Driftwatch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Richonn/DriftWatch/releases/download/v0.7.0/driftwatch_darwin_arm64.tar.gz"
-      sha256 "09a49c44422bfa298db87ae31dd195772646ac1a5ca58375e144f2204bb1271d"
+      sha256 "48048c578af52e035260bc80e166d63240d38b1472d0b9d7536040d47bd3376f"
 
       define_method(:install) do
         bin.install "driftwatch"
@@ -30,14 +30,14 @@ class Driftwatch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Richonn/DriftWatch/releases/download/v0.7.0/driftwatch_linux_amd64.tar.gz"
-      sha256 "a9c4ee4a3958aedacf81a4bf598c2efc1a906484c9cc53612bcfbb1ec642945c"
+      sha256 "627af2a75a608b7ccc7e8c0cb191dd13e8cdd4814ff88f485844be6b6190818c"
       define_method(:install) do
         bin.install "driftwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Richonn/DriftWatch/releases/download/v0.7.0/driftwatch_linux_arm64.tar.gz"
-      sha256 "f489c54b38e1a180ca90b572927ace9b5411994a606f8b383381929d65c2eb45"
+      sha256 "ed36aad22c9477c71db7fc82110fb404a7ce8570eef2be9214939ccd3ca5ba3f"
       define_method(:install) do
         bin.install "driftwatch"
       end
