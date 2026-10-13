@@ -4,21 +4,21 @@ cask "driftwatch" do
 
   on_macos do
     on_arm do
-      sha256 "1911f74515023574312dc9eaaf78b7594d4fbe51c28fdbd903c6ac4960a6c596"
+      sha256 "184808fc53642541642ebaa9c7dc534cba5695675dc1cd35228cb7a1f84adda1"
       url "https://github.com/Richonn/DriftWatch/releases/download/v#{version}/driftwatch_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d0194e28399688e90e671b4f066996b28f49128bf8e5b2bb043816a0ecbea7ed"
+      sha256 "0cde1603d593e193238500da09ef278261d1a7821d2d28e87bf053a1dfd9a7c1"
       url "https://github.com/Richonn/DriftWatch/releases/download/v#{version}/driftwatch_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "05c2c63647319686fefb36b69a9caf3b6399a13f23f3635f4f1d22c8a7fb508c"
+      sha256 "2feddc507a14e8b30dbf470ad5831838118fe2691eedfb3a7ce94fa4c4edd6f5"
       url "https://github.com/Richonn/DriftWatch/releases/download/v#{version}/driftwatch_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "87ccd7b48615e7474ab7360e5e57d207aea1b2a5e57d874cd76b334b922da1be"
+      sha256 "ac70a0cff11a2773adb0e185b38e4f00147ff42119ec5854576954153879376e"
       url "https://github.com/Richonn/DriftWatch/releases/download/v#{version}/driftwatch_linux_amd64.tar.gz"
     end
   end
